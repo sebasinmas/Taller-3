@@ -11,7 +11,6 @@ const dataManga = ref();
 const getApiCountries = async () => {
   try {
     dataCountries.value = await axios.get("https://countriesnow.space/api/v0.1/countries/population");
-    console.log(dataCountries.value.data);
 
   } catch (e) {
     console.log(e);
@@ -21,7 +20,6 @@ const getApiCountries = async () => {
 const getApiAnimeRec = async () => {
   try {
     dataAnimeRec.value = await axios.get("https://api.jikan.moe/v4/recommendations/anime");
-    console.log(dataAnimeRec.value.data);
 
   } catch (e) {
     console.log(e);
@@ -31,7 +29,6 @@ const getApiAnimeRec = async () => {
 const getApiAnime = async () => {
   try {
     dataAnime.value = await axios.get("https://api.jikan.moe/v4/random/anime");
-    console.log(dataAnime.value.data);
 
   } catch (e) {
     console.log(e);
@@ -41,7 +38,6 @@ const getApiAnime = async () => {
 const getApiManga = async () => {
   try {
     dataManga.value = await axios.get("https://api.jikan.moe/v4/random/manga");
-    console.log(dataManga.value.data);
 
   } catch (e) {
     console.log(e);
